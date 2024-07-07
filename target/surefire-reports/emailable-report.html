@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">27,183</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">SwagLabs_Mobile.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1720082690336</td><td rowspan="1">10163</td></tr><tr class="failedodd"><td rowspan="1">SwagLabs_Mobile.testing.InvalidLoginTest</td><td><a href="#m1">setUp</a></td><td rowspan="1">1720082673332</td><td rowspan="1">16960</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">SwagLabs_Mobile.testing.InvalidLoginTest</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1720082700504</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">SwagLabs_Mobile.testing.ValidLoginTest</td><td><a href="#m3">setUp</a></td><td rowspan="1">1720082690301</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m4">tearDown</a></td><td rowspan="1">1720082700505</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">SwagLabs_Mobile.testing.InvalidLoginTest</td><td><a href="#m5">testLogin</a></td><td rowspan="1">1720082690331</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">SwagLabs_Mobile.testing.ValidLoginTest</td><td><a href="#m6">testLogin</a></td><td rowspan="1">1720082690335</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">SwagLabs_Mobile.TestRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@76adb233</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by f53a071a-fe24-4b40-ad2b-69d0c3a39c93 is not known 
+Host info: host: &apos;DESKTOP-4FFJMPG&apos;, ip: &apos;172.27.69.231&apos;
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}, capabilities=[{appium:deviceName=emulator-5554, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:automationName=UIAutomator2, platformName=ANDROID, appium:appPackage=com.swaglabsmobileapp, appium:platformVersion=8.0, appium:app=D:/Kuliah/Synrgy-Bootcamp/Chapter 8/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk}]}]
+Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:138)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:232)
+	at SwagLabs_Mobile.testing.ValidLoginTest.setUp(ValidLoginTest.java:27)
+	at SwagLabs_Mobile.CucumberHooks.setUp(CucumberHooks.java:11)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SwagLabs_Mobile.testing.InvalidLoginTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: &apos;DESKTOP-4FFJMPG&apos;, ip: &apos;172.27.69.231&apos;
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}, capabilities=[{appium:deviceName=emulator-5554, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:automationName=UIAutomator2, platformName=ANDROID, appium:appPackage=com.swaglabsmobileapp, appium:platformVersion=8.0, appium:app=D:/Kuliah/Synrgy-Bootcamp/Chapter 8/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk}]}]
+Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:138)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:232)
+	at SwagLabs_Mobile.testing.InvalidLoginTest.setUp(InvalidLoginTest.java:25)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SwagLabs_Mobile.testing.InvalidLoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">SwagLabs_Mobile.testing.ValidLoginTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SwagLabs_Mobile.testing.ValidLoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SwagLabs_Mobile.testing.InvalidLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: &apos;DESKTOP-4FFJMPG&apos;, ip: &apos;172.27.69.231&apos;
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}, capabilities=[{appium:deviceName=emulator-5554, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:automationName=UIAutomator2, platformName=ANDROID, appium:appPackage=com.swaglabsmobileapp, appium:platformVersion=8.0, appium:app=D:/Kuliah/Synrgy-Bootcamp/Chapter 8/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk}]}]
+Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:138)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:232)
+	at SwagLabs_Mobile.testing.InvalidLoginTest.setUp(InvalidLoginTest.java:25)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">SwagLabs_Mobile.testing.ValidLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: &apos;DESKTOP-4FFJMPG&apos;, ip: &apos;172.27.69.231&apos;
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}, capabilities=[{appium:deviceName=emulator-5554, appium:appActivity=com.swaglabsmobileapp.MainActivity, appium:automationName=UIAutomator2, platformName=ANDROID, appium:appPackage=com.swaglabsmobileapp, appium:platformVersion=8.0, appium:app=D:/Kuliah/Synrgy-Bootcamp/Chapter 8/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk}]}]
+Capabilities {app: D:/Kuliah/Synrgy-Bootcamp/C..., appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 8.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:113)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:138)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:232)
+	at SwagLabs_Mobile.testing.InvalidLoginTest.setUp(InvalidLoginTest.java:25)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

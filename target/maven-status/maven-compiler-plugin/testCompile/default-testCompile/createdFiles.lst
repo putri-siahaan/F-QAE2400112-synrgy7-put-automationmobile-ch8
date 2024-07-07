@@ -1,0 +1,8 @@
+SwagLabs_Mobile\stepDefinitions\LoginSteps.class
+SwagLabs_Mobile\pages\HomePage.class
+SwagLabs_Mobile\CucumberHooks.class
+SwagLabs_Mobile\pages\LoginPage.class
+SwagLabs_Mobile\testing\ValidLoginTest.class
+SwagLabs_Mobile\stepDefinitions\CheckoutSteps.class
+SwagLabs_Mobile\TestRunner.class
+SwagLabs_Mobile\testing\InvalidLoginTest.class
